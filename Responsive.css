@@ -1,0 +1,165 @@
+/* Restoring browser effects */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+  
+/* All of the same styling to the body */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    background-image: linear-gradient(
+            70deg, black, white);
+}
+  
+/* Sizing, positioning of main 
+    dial of the clock */
+.clock {
+    width: 40vw;
+    height: 40vw;
+    background-image: linear-gradient(
+                70deg, black, white);
+    background-size: cover;
+    box-shadow: 0 3em 5.8em;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid rgb(0, 0, 0);
+}
+  
+.hr,
+.min,
+.sec {
+    width: 1%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transform-origin: bottom;
+    z-index: 2;
+    border-radius: 2em;
+}
+  
+.pin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1em;
+    height: 1em;
+    background: #000;
+    border: 2px solid #ffffff;
+    border-radius: 10em;
+    margin: auto;
+    z-index: 10;
+}
+  
+/* Different length of different hands of clock */
+.hr {
+    height: 25%;
+    background-color: #000;
+}
+  
+.min {
+    height: 30%;
+    background-color: #000;
+}
+  
+.sec {
+    height: 40%;
+    background-color: #000;
+    transform-origin: 50% 85%;
+}
+
+.one    {
+    position: absolute;
+    top: 10%;
+    left: 75%;
+
+}
+
+.two    {
+    position: absolute;
+    top: 28%;
+    left: 90%;
+}
+
+.three  {
+    position: absolute;
+    top: 47%;
+    left: 93%;
+}
+
+.four   {
+    position: relative;
+    top: 70%;
+    left: 87%;
+}
+
+.five   {
+    position: absolute;
+    top: 85%;
+    left: 71%;
+}
+
+.six    {
+    position: absolute;
+    top: 90%;
+    left: 27%;
+}
+
+.seven  {
+    position: absolute;
+    top: 83%;
+    left: -2%;
+}
+
+.eight  {
+    position: absolute;
+    top: 11em;
+    left: -3.5em;
+}
+
+.nine   {
+    position: absolute;
+    top: 7.5em;
+    left: -5.5em;
+}
+
+.ten    {
+    position: absolute;
+    top: 4em;
+    left: -5em;
+}
+
+.eleven {
+    position: absolute;
+    top: 1.5em;
+    left: -3.75em;
+}
+
+.twelve {
+    position: absolute;
+    top: 3%;
+    left: 47%;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve{
+    pointer-events: none;
+}
